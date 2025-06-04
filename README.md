@@ -28,8 +28,11 @@ pip install sentence-transformers keybert pillow
 ```
 
 ## Exection
-Demo code is in txt2img.ipynb(generate image from text prompt) 
-To analyze the image composition, you can use the code in analysis_img.ipynb
+Demo code is in txt2img.ipynb(generate image from text prompt)
+
+To analyze the image composition(with fixed words), you can use the code in analysis_img.ipynb
+
+To analyze the image composition generatively, you can use the code in src/run.py
 
 ## Demo of analysis
 ## 🖼️ 示例效果展示v2
