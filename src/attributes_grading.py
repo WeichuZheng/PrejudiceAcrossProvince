@@ -215,9 +215,15 @@ if __name__ == "__main__":
     
     # You can also test with other concepts
     print("\n" + "="*70)
-    results2 = scorer.calculate_weighted_similarity_score(word_weights, "adventure")
+    results2 = scorer.calculate_weighted_similarity_score(word_weights, "Lonely")
     scorer.print_detailed_results(results2)
     
     print("\n" + "="*70)
     results3 = scorer.calculate_weighted_similarity_score(word_weights, "space")
     scorer.print_detailed_results(results3)
+
+    from analysis_model import ImageTextMatchingModel
+    model = ImageTextMatchingModel()
+    image_path = "../docs/astronaut_rides_horse.png"
+    score_of_clip = model.score_attributes(image_path, ["happiness", "Lonely", "space"])
+    print(score_of_clip)
